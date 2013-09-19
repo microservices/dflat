@@ -62,7 +62,7 @@ module Dflat
 
         manifest!
         lock
-        manifest.add dest, :base => data_path
+        manifest.add dest, :options => {:path => data_path}
         File.open(manifest_path, 'w') do |f|
           f.write(manifest.to_s)
         end
@@ -153,13 +153,13 @@ module Dflat
       def remove list, options = {}
         list = [list] if list.instance_of? String
         @redd.remove list.map { |x| x }, options
-        m = manifest!
+        manifest!
         list.each do |l|
-          m = m.remove l
+          manifest.remove l
         end
 
-        File.open(File.join(path, 'manifest.txt'), 'w') do |f|
-          f.write(m.to_s)
+        File.open(manifest_path, 'w') do |f|
+          f.write(manifest.to_s)
         end
       end
 
