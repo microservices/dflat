@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/uklibraries/anvl.git
+  revision: 285651d100482cb6204a7c3857057d2bf40c278d
+  specs:
+    anvl (0.3.0)
+
 PATH
   remote: .
   specs:
@@ -11,7 +17,6 @@ GEM
   remote: https://rubygems.org/
   specs:
     ZenTest (4.9.3)
-    anvl (0.3.0)
     checkm (0.1.1)
     diff-lcs (1.1.3)
     i18n (0.6.0)
@@ -35,6 +40,7 @@ PLATFORMS
 
 DEPENDENCIES
   ZenTest
+  anvl!
   bundler
   dflat!
   rake
