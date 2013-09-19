@@ -3,3 +3,5 @@ source "https://rubygems.org"
 # Example:
 #   gem "activesupport", ">= 2.3.5"
 gemspec
+
+gem "anvl", :git => "git://github.com/uklibraries/anvl.git"
