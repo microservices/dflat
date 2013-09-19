@@ -43,7 +43,7 @@ describe "dflat" do
       file = @dflat.current.add 'LICENSE.txt', 'producer/abcdef'
       lines = @dflat.current.manifest!.to_s.split "\n"
       lines[0].should == '#%checkm_0.7'
-      lines[1].should =~ /provider\/abcdef/
+      lines[1].should =~ /producer\/abcdef/
       @dflat.current.manifest.should be_valid
     end
 
