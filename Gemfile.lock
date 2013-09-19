@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/uklibraries/anvl.git
+  revision: 285651d100482cb6204a7c3857057d2bf40c278d
+  specs:
+    anvl (0.3.0)
+
 PATH
   remote: .
   specs:
@@ -8,9 +14,9 @@ PATH
       namaste
 
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
-    anvl (0.3.0)
+    ZenTest (4.9.3)
     checkm (0.1.1)
     diff-lcs (1.1.3)
     i18n (0.6.0)
@@ -18,6 +24,7 @@ GEM
     namaste (0.3.0)
       i18n
     rake (0.9.2.2)
+    redgreen (1.2.2)
     rspec (2.11.0)
       rspec-core (~> 2.11.0)
       rspec-expectations (~> 2.11.0)
@@ -32,8 +39,11 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  ZenTest
+  anvl!
   bundler
   dflat!
   rake
+  redgreen
   rspec
   yard
